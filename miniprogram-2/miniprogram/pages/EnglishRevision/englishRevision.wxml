@@ -1,0 +1,38 @@
+<view>
+<head/>
+<view class="content_box">
+  <view class="english_textarea">
+    <!-- <textarea value="{{input}}" style="{width:'100%'}"  auto-height placeholder="自动变高" /> -->
+  <van-field value="{{input}}"  rows="4"  type="textarea" placeholder="请输入英语" autosize="{{autosizeData}}" bind:change="changeWords"  class="0" maxlength="2000" show-word-limit> </van-field>
+  <van-button  size="small"  class="send-button"  round type="info" bind:tap="revision"> 语法检查</van-button>
+  </view>
+<!-- <view class="btn_line">
+  <van-button bind:tap="revision">语法检查</van-button>
+</view> -->
+<view wx:if="{{revisionData}}">
+
+  <view wx:for="{{revisionData.revisionList}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+    <view class="revision_item">
+      <view class="err_words">{{item.errWords}}</view>
+      <van-icon class="icon_right" name="down" size="18"/>
+      <view class="right_words">{{item.rightWords}}</view>
+    </view>
+
+  </view>
+  <view class="revision_words">
+  <view>正确写法:</view>
+  {{revisionData.revisionWords}}
+  </view>
+  <view class="output">
+  <view>解析:</view>
+  {{revisionData.output}}
+  </view>
+
+
+</view>
+</view>
+
+
+
+
+</view>

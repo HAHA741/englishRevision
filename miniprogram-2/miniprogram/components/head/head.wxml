@@ -1,0 +1,1 @@
+<view style="height: {{navbarHeight}}px;" class="head"> 语法检查</view>

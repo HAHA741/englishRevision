@@ -1,0 +1,75 @@
+/* pages/EnglishRevision/englishRevision.wxss */
+.btn_line{
+  margin-top: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content_box{
+  padding: 20rpx;
+}
+.english_textarea{
+  position: relative;
+  width: 100%;
+  min-height: 140px;
+  padding: 14px 18px;
+  border-radius: 14px;
+  border: 1px solid #ddd;
+  // background: #f9f9f9;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+.icon_right{
+  margin: 0 10px;
+  transform: rotate(270deg);
+}
+.revision_item{
+  display: flex;
+  align-items: center;
+  background-color: #F5F5DC;
+  border-radius: 14px;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 28rpx;
+  .err_words{
+    text-decoration: line-through;
+    color: red;
+  }
+  .right_words{
+    text-decoration: underline;
+    color: green;
+    font-weight: bold;
+
+  }
+}
+.textarea {
+  min-height: 100px; /* 设置最低高度 */
+}
+
+.send-button {
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+}
+.revision_words{
+  margin-top: 10px;
+  background-color: #B0E0E6;
+  border-radius: 14px;
+  padding: 10px;
+  font-size: 28rpx;
+
+}
+.output{
+  font-size: 28rpx;
+  background-color: #C3E6CB;
+  margin-top: 10px;
+  border-radius: 14px;
+  padding: 10px;
+
+}
